@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precursors â€“ Lâ€™Autre Rivage</title>
+  <meta name="description" content="Fragment : Precursors. Un texte court, incomplet volontairement, reliÃ© aux autres traces." />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="../index.html" aria-label="Retour au Seuil">
+      <span class="sigil" aria-hidden="true">âŸ¡</span>
+      <span class="brand-title">Lâ€™Autre Rivage</span>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a class="navlink" href="../index.html#fragments">Fragments</a>
+      <a class="navlink" href="../index.html#archives">Archives</a>
+      <a class="navlink" href="../index.html#transmissions">Transmissions</a>
+      <a class="navlink" href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="iconbtn" id="soundToggle" type="button" aria-pressed="false">
+        <span class="dot" aria-hidden="true"></span> Son
+      </button>
+      <button class="iconbtn" id="secretBtn" type="button">Passage</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="sectionhead reveal">
+        <p class="tag">Archive</p>
+        <h1 class="h2">Precursors</h1>
+        <p class="sub">Fragment incomplet. La vÃ©ritÃ© nâ€™est jamais livrÃ©e entiÃ¨re.</p>
+      </header>
+
+      <article class="panel reveal">
+        <p>Ce fragment nâ€™a pas encore Ã©tÃ© fixÃ©.</p>
+<p class="micro">Ajoute ici le texte rÃ©el (ou laisse une lacune assumÃ©e).</p>
+      </article>
+
+      <div class="cta-row reveal">
+        <a class="btn btn-ghost" href="../fragments.html">â† Tous les fragments</a>
+        <a class="btn btn-primary" href="raclures.html">Autre trace â†’</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p class="footbrand"><span class="sigil" aria-hidden="true">âŸ¡</span> Lâ€™Autre Rivage</p>
+      <p class="micro">Â© <span id="year"></span></p>
+      <div class="social">
+        <a href="https://www.youtube.com/@Le-Royaume-des-RÃ©cits" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.tiktok.com/@leroyaumedeshistoires" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="soundModal" aria-labelledby="soundTitle">
+    <form method="dialog" class="modalbox">
+      <h2 id="soundTitle" class="h3">Ambiance sonore</h2>
+      <p class="micro">Rien nâ€™est lancÃ© sans ton accord.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" value="enable" id="enableSound">Activer</button>
+        <button class="btn btn-ghost" value="disable">Pas maintenant</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="secretModal" aria-labelledby="secretTitle">
+    <form method="dialog" class="modalbox" id="secretForm">
+      <h2 id="secretTitle" class="h3">Le Passage</h2>
+      <p class="micro">Un mot exact. Une porte.</p>
+
+      <label>
+        <span>Mot</span>
+        <input id="secretInput" type="text" autocomplete="off" placeholder="..." />
+      </label>
+
+      <div class="cta-row">
+        <button class="btn btn-primary" value="go">Ouvrir</button>
+        <button class="btn btn-ghost" value="cancel">Fermer</button>
+      </div>
+
+      <p class="micro" id="secretStatus" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <audio id="ambience" loop preload="none">
+    <source src="../assets/audio/ambience.wav" type="audio/wav" />
+  </audio>
+  <audio id="musicCalm" loop preload="none">
+    <source src="../assets/audio/calm.wav" type="audio/wav" />
+  </audio>
+  <audio id="musicDeep" loop preload="none">
+    <source src="../assets/audio/deep.wav" type="audio/wav" />
+  </audio>
+  <audio id="musicSecret" loop preload="none">
+    <source src="../assets/audio/secret.wav" type="audio/wav" />
+  </audio>
+</body>
+</html>
+

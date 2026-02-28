@@ -1,0 +1,229 @@
+﻿<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L’Autre Rivage</title>
+  <meta name="description" content="Fragments, chroniques et passages. Le Nexus des Mondes vous attend." />
+
+  <meta property="og:title" content="L’Autre Rivage" />
+  <meta property="og:description" content="Fragments, chroniques et passages. Le Nexus des Mondes vous attend." />
+  <meta property="og:image" content="assets/images/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="Retour en haut">
+      <span class="sigil" aria-hidden="true">✦</span>
+      <span class="brand-title">L’Autre Rivage</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation">
+      <a class="navlink" href="#fragments">Fragments</a>
+      <a class="navlink" href="#nexus">Le Nexus</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <button class="iconbtn" id="audioBtn" type="button" aria-pressed="false">
+        <span class="dot" id="audioDot" aria-hidden="true"></span>Ambiance
+      </button>
+
+      <button class="iconbtn burger" id="burger" type="button"
+              aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE (caché par défaut via CSS, affiché quand .open est ajouté) -->
+  <div class="mobilemenu" id="mobileMenu" aria-label="Menu mobile">
+    <a class="navlink" href="#fragments">Fragments</a>
+    <a class="navlink" href="#nexus">Le Nexus</a>
+    <a class="navlink" href="#contact">Contact</a>
+    <div class="mobilemenu-sep"></div>
+
+    <a class="btn btn-primary external" href="https://discord.gg/JzMMEdfq8Q" target="_blank" rel="noopener noreferrer">
+      Rejoindre le Discord
+    </a>
+
+    <div class="links">
+      <a class="pill external" href="https://www.tiktok.com/@_manub44_" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a class="pill external" href="https://www.youtube.com/channel/UCTUPD72lJBISwecMe_e_Mlg" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="section section-hero">
+      <div class="container">
+        <div class="hero reveal">
+          <p class="kicker">ARCHIVES • FRAGMENTS • SEUIL</p>
+          <h1 class="title">L’AUTRE RIVAGE</h1>
+          <p class="lead">
+            Ici, les textes ne s’alignent pas : ils apparaissent. Des morceaux de mondes, des voix,
+            des indices… et une porte qui ne s’ouvre pas deux fois de la même façon.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="fragments.html">Lire les fragments</a>
+            <a class="btn external" href="https://discord.gg/JzMMEdfq8Q" target="_blank" rel="noopener noreferrer">Rejoindre le Nexus</a>
+            <a class="btn btn-ghost" href="#contact">Écrire</a>
+          </div>
+
+          <div class="links" style="margin-top:1rem">
+            <a class="pill external" href="https://www.tiktok.com/@_manub44_" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a class="pill external" href="https://www.youtube.com/channel/UCTUPD72lJBISwecMe_e_Mlg" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </div>
+
+          <p class="whisper">« Quand tu reconnaîtras l’écho… tu seras déjà de l’autre côté. »</p>
+        </div>
+      </div>
+
+      <div class="scrollhint" aria-hidden="true">
+        <div class="line"></div>
+        <div class="txt">descendre</div>
+      </div>
+    </section>
+
+    <!-- FRAGMENTS -->
+    <section class="section section-alt" id="fragments">
+      <div class="container">
+        <div class="sectionhead reveal">
+          <h2 class="h2">Fragments</h2>
+          <p class="sub">Des pages courtes, des traces, des angles morts. Chaque entrée est un pas qui te regarde revenir.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <p class="tag">Fragment</p>
+            <h3>Le Nom Effacé</h3>
+            <p class="excerpt">Un nom qui refuse l’encre. Un souvenir qui refuse la mémoire.</p>
+            <a class="cardlink" href="fragments/le-nom-efface.html">Lire →</a>
+          </article>
+
+          <article class="card reveal">
+            <p class="tag">Chronique</p>
+            <h3>Chronique : Nuit &amp; Silence</h3>
+            <p class="excerpt">Un passage consigné trop tard. Une présence consignée trop tôt.</p>
+            <a class="cardlink" href="fragments/chronique-nuit-silence.html">Lire →</a>
+          </article>
+
+          <article class="card reveal">
+            <p class="tag">Seuil</p>
+            <h3>Fragments du Seuil</h3>
+            <p class="excerpt">Le seuil n’est pas une porte : c’est une décision qui te suit.</p>
+            <a class="cardlink" href="fragments/fragments-du-seuil.html">Lire →</a>
+          </article>
+        </div>
+
+        <p class="hint reveal">
+          Tous les fragments : <a class="cardlink" href="fragments.html">index complet</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEXUS -->
+    <section class="section" id="nexus">
+      <div class="container">
+        <div class="sectionhead reveal">
+          <h2 class="h2">Le Nexus des Mondes</h2>
+          <p class="sub">Le lieu où les lecteurs deviennent des explorateurs. Théories, indices, annonces, accès aux nouveautés.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="panel reveal">
+            <h3>Entrer</h3>
+            <p class="excerpt">
+              Discord : annonces, discussions, rôles, salons, et accès aux nouveaux fragments.
+            </p>
+
+            <div class="links">
+              <a class="pill external" href="https://discord.gg/JzMMEdfq8Q" target="_blank" rel="noopener noreferrer">Discord</a>
+              <a class="pill external" href="https://www.tiktok.com/@_manub44_" target="_blank" rel="noopener noreferrer">TikTok</a>
+              <a class="pill external" href="https://www.youtube.com/channel/UCTUPD72lJBISwecMe_e_Mlg" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a class="pill" href="fragments.html">Fragments</a>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3>Règles simples</h3>
+            <ul class="bullets">
+              <li>Respect et curiosité.</li>
+              <li>Pas de spoil sauvage : salons/balises.</li>
+              <li>Théories bienvenues (même les plus folles).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="sectionhead reveal">
+          <h2 class="h2">Contact</h2>
+          <p class="sub">Un message. Un fragment. Une passerelle.</p>
+        </div>
+
+        <form class="form reveal" id="contactForm">
+          <div class="row">
+            <label>
+              <span>Nom</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Votre nom" />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="vous@exemple.com" />
+            </label>
+          </div>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Écris ici…"></textarea>
+          </label>
+
+          <div class="cta-row">
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <p class="micro">Le formulaire ouvre ton client mail.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot">
+        <p class="footbrand"><span class="sigil" aria-hidden="true">✦</span> L’Autre Rivage</p>
+
+        <div class="social">
+          <a class="external" href="https://discord.gg/JzMMEdfq8Q" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="external" href="https://www.tiktok.com/@_manub44_" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a class="external" href="https://www.youtube.com/channel/UCTUPD72lJBISwecMe_e_Mlg" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="fragments.html">Fragments</a>
+          <a href="#top">Haut</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="ambience" preload="auto" loop>
+    <source src="assets/audio/ambience.wav" type="audio/wav" />
+  </audio>
+
+  <script src="script.js?v=20260227-2" defer></script>
+</body>
+</html>
